@@ -28,5 +28,9 @@ Drawing git branches like actual tree branches shows me the status of my repo as
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+Merging brings features that were implemented on separate branches together. We unite the two branches in a single point so that we know from that point on that we have the changes that were made in the separate branches in one place (the merge commit).
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+Automatic saves lots of time, when merges are massive, but trivial to sort. At the same time, automatic merging only works in certain well defined situations. But that is good enough. 
