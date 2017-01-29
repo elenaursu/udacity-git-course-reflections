@@ -1,0 +1,38 @@
+When would you want to use a remote repository rather than keeping all your work
+local?
+
+    When working in a team of several people, or when working from different computers (library, home, work, so on). Or if I'm working alone, I might like to have an online copy of my work in case my computer crashes. 
+
+Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+
+    When pulling, there might be some need for merging in case pull happens while I'm working on files that someone else changed and pushed since my previous pull. I might want to merge after my work is done, instead while I'm doing it. It's a good idea to keep your project up-to-date, especially the master branch, but it's a better idea to have the freedom to decide when to actually pull and update my local repository.
+
+Describe the differences between forks, clones, and branches.  When would you
+use one instead of another?
+
+    Forking is done between repositories on GitHub. It's a GitHub feature, not a Git feature. Cloning can be done between a remote repository (on GitHub or other servers) and a local repository, or between two local repositories. Branches are done within the same repository. 
+	
+	I'd use fork when I want to take over on my own from a project someone else already had started. I'd use clone when working on a project along with my team mates and the project had already been started before I joined. I'd use branch in my own repo to organize my own work.
+
+What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+    origin/master maintains the changes that my coworkers pushed on the remote since the last time I pulled. If I did some work in the mean time (my master is ahead of origin/master), then I can use origin/master to merge (automatically or manually, if there's a conflict) and push my changes in such a way that they are in sync with what is on the remote.
+
+How would you collaborate without using Git or GitHub?  What would be easier,
+and what would be harder?
+
+    Me in my team are currently using SVN. I've used SVN in the past for school project as well. It looks like Git encourages personal initiatives more. With branches, you can work on your own version of the app you are developing, while with SVN, you had to make your changes locally on a separate local copy of the repo and were never able to make commits on the remote repository that the entire team was collaborating to. With Git it looks like you can keep your changes on a separate branch and occasionally pull the master changes into your branch if you want. This branch will also be allowed to exist on the remote. If the branch leads to nothing, then it can simply be deleted. 
+	
+	The easier thing with SVN is that it's faster to learn. It's just a tool like other minor tools that helps us with our jobs, while Git is an entire thing in itself. At least that's what it looks like at the moment. 
+
+When would you want to make changes in a separate branch rather than directly in
+master?  What benefits does each approach have?
+
+    I'd make changes into a separate branch when experimenting improvements (which might be discarded in the end) or when the timeline of the project requires me to stay away from the master branch. Also, if I'm the only person working on a set of files, there are no reasons why I wouldn't make as many branches as I'd like. The benefit is that I keep my work logically separated from the master (production) branch and I push only when I'm ready. I imagine that builds would be much cleaner. 
+	
+	Changes to the master branch are easier to manage, liniar as in SVN. 
+	
+	
+
