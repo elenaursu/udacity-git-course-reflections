@@ -5,32 +5,32 @@ What happens when you initialize a repository? Why do you need to do it?
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-The staging area marks the files in the working directory which are under version control. Not all files in the working are under version control and not changes have yet reached the repository. 
+	The staging area marks the files in the working directory which are under version control. Not all files in the working are under version control and not changes have yet reached the repository. 
 
-It gives a way to see what changes you made by comparing the current version with the one from the previous commit.
+	It gives a way to see what changes you made by comparing the current version with the one from the previous commit.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
-I can add files to the staging area in separate steps and make a commit of what the staging area currently holds. Then I add the next files being part of the same logical change and make another commit of them.
+	I can add files to the staging area in separate steps and make a commit of what the staging area currently holds. Then I add the next files being part of the same logical change and make another commit of them.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
-When working on a feature and I don't care what my coworkers are doing on the master branch. I might even be offline for days and this would not matter. I would still be able to test my feature nicely.
+	When working on a feature and I don't care what my coworkers are doing on the master branch. I might even be offline for days and this would not matter. I would still be able to test my feature nicely.
 
 Or, my coworkers might be pushing just hotfixes to the master branch to release to market and I would be able to work on my feature without caring about that.
 
-How do the diagrams help you visualize the branch structure?
+	How do the diagrams help you visualize the branch structure?
 
-Drawing git branches like actual tree branches shows me the status of my repo as well as reachability to past commits.
+	Drawing git branches like actual tree branches shows me the status of my repo as well as reachability to past commits.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-Merging brings features that were implemented on separate branches together. We unite the two branches in a single point so that we know from that point on that we have the changes that were made in the separate branches in one place (the merge commit).
+	Merging brings features that were implemented on separate branches together. We unite the two branches in a single point so that we know from that point on that we have the changes that were made in the separate branches in one place (the merge commit).
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
 
-Automatic saves lots of time, when merges are massive, but trivial to sort. At the same time, automatic merging only works in certain well defined situations. But that is good enough.
+	Automatic saves lots of time, when merges are massive, but trivial to sort. At the same time, automatic merging only works in certain well defined situations. But that is good enough.
